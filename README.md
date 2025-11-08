@@ -19,17 +19,17 @@ Using Natural Language Processing (NLP) techniques and machine learning algorith
 ---
 
 ## Project Workflow  
-1. **Data Preprocessing**  
+1. **Data Preprocessing** :
    - Clean and prepare email text  
    - Remove stopwords, punctuations, and apply stemming  
 
-2. **Feature Extraction**  
+2. **Feature Extraction** :
    - Convert text into numerical vectors using CountVectorizer / TF-IDF  
 
-3. **Model Training**  
+3. **Model Training** :
    - Train multiple ML models (Naive Bayes, Logistic Regression)  
 
-4. **Evaluation**  
+4. **Evaluation** :
    - Accuracy, Precision, Recall, F1-Score  
    - Confusion Matrix  
    - ROC Curve & AUC Score  
