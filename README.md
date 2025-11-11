@@ -6,7 +6,7 @@ Using Natural Language Processing (NLP) techniques and machine learning algorith
 
 ---
 
-## Tech Stack  
+## Tech Stack 
 - **Programming Language**: Python  
 - **Libraries**:  
   - `scikit-learn` (Machine Learning models)  
