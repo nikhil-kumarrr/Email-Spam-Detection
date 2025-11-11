@@ -6,7 +6,7 @@ Using Natural Language Processing (NLP) techniques and machine learning algorith
 
 ---
 
-## Tech Stack 
+## Tech Stack :
 - **Programming Language**: Python  
 - **Libraries**:  
   - `scikit-learn` (Machine Learning models)  
@@ -18,7 +18,7 @@ Using Natural Language Processing (NLP) techniques and machine learning algorith
 
 ---
 
-## Project Workflow  
+## Project Workflow :
 1. **Data Preprocessing** :
    - Clean and prepare email text  
    - Remove stopwords, punctuations, and apply stemming  
@@ -36,7 +36,7 @@ Using Natural Language Processing (NLP) techniques and machine learning algorith
 
 ---
 
-## Results  
+## Results  :
 - **Logistic Regression Accuracy**: ~97%  
 - **Naive Bayes Accuracy**: ~97%  
 
@@ -44,7 +44,7 @@ Both models performed well, with Logistic Regression showing slightly better per
 
 ---
 
-## Dataset  
+## Dataset :
 The dataset contains labeled email messages as **Spam (1)** or **Not Spam (0)**.  
 - Text data is preprocessed (stopword removal, stemming, punctuation removal).  
 - Features extracted using **Bag of Words / TF-IDF** techniques.  
