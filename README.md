@@ -1,54 +1,97 @@
-# Email Spam Detection using Machine Learning  
+# Email Spam Detection System
+A machine learning–based web application that classifies emails as Spam or Safe (Not Spam) using NLP techniques.
+Built with Scikit-Learn and Streamlit, the app provides real-time spam detection with a clean, modern interface.
 
-## Project Overview  
-This project focuses on building a machine learning model to classify emails as **Spam** or **Not Spam**.  
-Using Natural Language Processing (NLP) techniques and machine learning algorithms, the model learns patterns from email text and predicts whether a given email is legitimate or spam.  
+## 🚀 Features
+* Spam vs Not-Spam classification
+* Trained ML model loaded from .pkl file
+* Text vectorization using saved feature extractor
+* Real-time prediction from user input
+* Clean glassmorphism UI with clear visual feedback
 
----
+## How It Works
+### 1️⃣ Dataset
+#### Uses a labeled email dataset (mail_data.csv) containing:
+* Email text
+* Spam / Not Spam labels
 
-## Tech Stack 
-- **Programming Language**: Python  
-- **Libraries**
-  - `scikit-learn` (Machine Learning models)  
-  - `pandas`, `numpy` (Data handling)  
-  - `matplotlib`, `seaborn` (Visualization)  
-- **Algorithms Used**
-  - Logistic Regression  
-  - Naive Bayes (MultinomialNB)  
+### 2️⃣ Text Processing
+* Text preprocessing
+* Feature extraction using TF-IDF / CountVectorizer
+* Vectorizer saved as feature_extraction.pkl
 
----
+### 3️⃣ ML Model
+* Binary classification model
+* Trained in Jupyter Notebook
+* Saved as Email Spam model.pkl
 
-## Project Workflow 
-1. **Data Preprocessing** 
-   - Clean and prepare email text  
-   - Remove stopwords, punctuations, and apply stemming  
+### 4️⃣ Prediction Flow
+#### User input → Vectorizer transform → Model prediction →
+#### Result displayed as:
+* 🚨 Spam Email
+* ✅ Safe Email
 
-2. **Feature Extraction** 
-   - Convert text into numerical vectors using CountVectorizer / TF-IDF  
+## Tech Stack
+* Python
+* Streamlit
+* Scikit-Learn
+* Pickle
+* NumPy
+* NLP (Text Vectorization)
 
-3. **Model Training** 
-   - Train multiple ML models (Naive Bayes, Logistic Regression)  
+## 📦 Installation & Setup
 
-4. **Evaluation** 
-   - Accuracy, Precision, Recall, F1-Score  
-   - Confusion Matrix  
-   - ROC Curve & AUC Score  
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
----
+### 2️⃣ Create virtual environment
+```bash
+python -m venv venv
+```
 
-## Results  
-- **Logistic Regression Accuracy**: ~97%  
-- **Naive Bayes Accuracy**: ~97%  
+### 3️⃣ Activate environment
 
-Both models performed well, with Logistic Regression showing slightly better performance.  
+#### Windows
+```bash
+venv\Scripts\activate
+```
 
----
+#### Mac/Linux
+```bash
+source venv/bin/activate
+```
+
+### 4️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5️⃣ Run the app
+```bash
+streamlit run main.py
+```
+
+## 📁 Project Structure
+```bash
+│── main.py                      # Streamlit application
+│── Email Spam Detection.ipynb   # Model training notebook
+│── mail_data.csv                # Dataset
+│── Email Spam model.pkl         # Trained ML model
+│── feature_extraction.pkl       # Text vectorizer
+│── requirements.txt
+└── README.md
+```
 
 ## Dataset 
-The dataset contains labeled email messages as **Spam (1)** or **Not Spam (0)**.  
-- Text data is preprocessed (stopword removal, stemming, punctuation removal).  
-- Features extracted using **Bag of Words / TF-IDF** techniques.  
+Available on
+Kaggle : https://www.kaggle.com/datasets/suraj452/mail-data
 
-*Dataset Source : https://www.kaggle.com/datasets/suraj452/mail-data*
+## 🌐 Live Demo
+https://maildetection.streamlit.app/
 
----
+## 📸 Screenshots
+![img alt](https://github.com/nikhil-kumarrr/images/blob/main/Screenshot%202025-12-16%20115920.png?raw=true)
+![img alt](https://github.com/nikhil-kumarrr/images/blob/main/Screenshot%202025-12-16%20115854.png?raw=true)
