@@ -8,7 +8,7 @@ Built with Scikit-Learn and Streamlit, the app provides real-time spam detection
 * Text vectorization using saved feature extractor
 * Real-time prediction from user input
 * Clean glassmorphism UI with clear visual feedback
-
+ 
 ## How It Works 
 ### 1️⃣ Dataset
 #### Uses a labeled email dataset (mail_data.csv) containing:
